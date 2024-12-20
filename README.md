@@ -2,6 +2,9 @@
 
 This is a simple web application that retrieves a random word from a dictionary API and displays its definition when a button is clicked.
 
+
+![alt text](image.png)
+
 ## Project Structure
 
 ```
