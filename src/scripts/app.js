@@ -1,3 +1,4 @@
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const randomWordUrl = 'https://www.vocabulary.com/randomword';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function getRandomWordAndDefinition() {
-    const response = await fetch(randomWordUrl);
+    const response = await fetch(proxyUrl + randomWordUrl);
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }
